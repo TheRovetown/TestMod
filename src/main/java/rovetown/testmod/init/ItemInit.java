@@ -15,11 +15,15 @@ public class ItemInit
 {
 	public static final Item steel_ingot = null;
 	public static final Item test_item = null;
+	public static final Item crystal_casing = null;
+	public static final Item crystal_casing_with_flow_control = null;
 	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) 
 	{
 		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("test_item"));
 		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("steel_ingot"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("crystal_casing"));
+		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName("crystal_casing_with_flow_control"));
 	}
 }

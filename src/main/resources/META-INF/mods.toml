@@ -1,27 +1,27 @@
 modLoader="javafml"
-loaderVersion="[30,)"
-issueTrackerURL="https://github.com/TheRovetown/MinecraftModding/issues"
+loaderVersion="[31,)"
+# issueTrackerURL=""
 [[mods]]
 modId="testmod"
-version="0.1"
+version="${file.jarVersion}"
 displayName="Test Mod"
-authors="Rovetown, MaroonShaded, and Velocityraptor"
+# updateJSONURL=""
+# displayURL=""
+logoFile="testmod.png"
+credits="Velocityraptor, Rovetown and Maroonshaded"
+authors="Velocityraptor, Rovetown and Maroonshaded"
 description='''
-This is a Test Mod.
-
-This is for testing
-
-May the forge be with you.
+This is a mod made by Velocityraptor, Maroonshaded and Rovetown
 '''
 [[dependencies.testmod]]
     modId="forge"
     mandatory=true
-    versionRange="[30,)"
+    versionRange="[31,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.testmod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"

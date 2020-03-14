@@ -3,6 +3,8 @@ package rovetown.testmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+//import net.minecraft.item.ItemGroup;
+//import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 //import net.minecraft.item.Item;
 //import net.minecraftforge.event.RegistryEvent;
@@ -45,6 +47,21 @@ public class TestMod
   public void onServerStarting(FMLServerStartingEvent event) 
   {
 	  
+  }
+  
+  /*public static class TestModItemGroup extends ItemGroup
+  {
+	  private TestModItemGroup(int index, String label) 
+	  {
+		  super(index, label);
+	  }
+	  
+	  @Override
+	  public ItemStack createIcon() 
+	  {
+		  return new ItemStack()
+	  }
+	}
   }
   
   /*@Mod.EventBusSubscriber(bus=Bus.MOD)
