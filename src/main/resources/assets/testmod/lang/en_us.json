@@ -1,8 +1,18 @@
 {
-	"item.testmod.test_item": "Test Item",
 	"item.testmod.steel_ingot": "Steel Ingot",
 	"item.testmod.crystal_casing": "Crystal Casing",
 	"item.testmod.crystal_casing_with_flow_control": "Crystal Casing with Flow Control",
+	"item.testmod.test_item": "Test Item",
 	
-	"block.testmod.test_block": "Test Block"
+	"item.testmod.test_hoe": "Test Hoe",
+	"item.testmod.test_pickaxe": "Test Pickaxe",
+	"item.testmod.test_sword": "Test Sword",
+	"item.testmod.test_axe": "Test Axe",
+	"item.testmod.test_shovel": "Test Shovel",
+	
+	"item.testmod.test_food": "Test Food",
+	
+	"block.testmod.test_block": "Test Block",
+	
+	"itemGroup.testtab": "Test Tab"
 }
