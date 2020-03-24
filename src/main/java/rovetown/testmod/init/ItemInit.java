@@ -21,6 +21,8 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.ObjectHolder;
 import rovetown.testmod.TestMod;
 import rovetown.testmod.TestMod.TestModItemGroup;
+import rovetown.testmod.objects.items.SpringnegativexItem;
+import rovetown.testmod.objects.items.SpringpositivexItem;
 
 @Mod.EventBusSubscriber(modid = TestMod.MODID, bus = Bus.MOD)
 @ObjectHolder(TestMod.MODID)
@@ -31,6 +33,7 @@ public class ItemInit
 	public static final Item crystal_casing = null;
 	public static final Item crystal_casing_with_flow_control = null;
 	public static final Item test_item = null;
+	public static final Item test_item2 = null;
 	
 	//Tools
 	public static final Item test_hoe = null;
@@ -50,6 +53,8 @@ public class ItemInit
 		event.getRegistry().register(new Item(new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("crystal_casing"));
 		event.getRegistry().register(new Item(new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("crystal_casing_with_flow_control"));
 		event.getRegistry().register(new Item(new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("test_item"));
+		event.getRegistry().register(new SpringpositivexItem(new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("springx_item"));
+		event.getRegistry().register(new SpringnegativexItem(new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("spring-x_item"));
 		
 		//Tools
 		event.getRegistry().register(new SwordItem(ModItemTier.TEST, 7, 2.2F, new Item.Properties().group(TestModItemGroup.instance)).setRegistryName("test_sword"));

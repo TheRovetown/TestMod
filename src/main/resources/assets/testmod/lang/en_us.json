@@ -3,6 +3,8 @@
 	"item.testmod.crystal_casing": "Crystal Casing",
 	"item.testmod.crystal_casing_with_flow_control": "Crystal Casing with Flow Control",
 	"item.testmod.test_item": "Test Item",
+	"item.testmod.spring-x_item": "Spring1",
+	"item.testmod.springx_item": "Spring2",
 	
 	"item.testmod.test_hoe": "Test Hoe",
 	"item.testmod.test_pickaxe": "Test Pickaxe",
