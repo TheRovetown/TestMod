@@ -13,14 +13,18 @@ import net.minecraftforge.eventbus.api.IEventBus;
 //import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 //import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import rovetown.testmod.init.ItemInit;
+import rovetown.testmod.world.gen.TestOreGen;
 
 @Mod(TestMod.MODID)
+@Mod.EventBusSubscriber(modid = TestMod.MODID, bus = Bus.MOD)
 public class TestMod 
 {
   public static final String MODID = "testmod";
@@ -52,6 +56,12 @@ public class TestMod
   public void onServerStarting(FMLServerStartingEvent event) 
   {
 	  
+  }
+  
+  @SubscribeEvent
+  public static void loadCompleteEvent(FMLLoadCompleteEvent event)
+  {
+	  TestOreGen.generateOre();
   }
   
   public static class TestModItemGroup extends ItemGroup
